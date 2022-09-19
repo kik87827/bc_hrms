@@ -35,7 +35,7 @@
 								<div class="mc_content_row">
 									<ul class="mc_count_item_list">
 										<li>
-											<div class="mc_count_item">
+											<div class="mc_count_item type2">
 												<div class="mc_count_box"><span class="mc_count_box_text">3</span></div>
 												<div class="mc_count_label">승인요청</div>
 											</div>
@@ -88,7 +88,7 @@
 										<a href="javascript:;" class="btn_banner_control prev_go"><span class="hdtext">이전</span></a>
 										<div class="swiper-container mcbanner-container">
 											<div class="swiper-wrapper">
-												<div class="swiper-slide"><a href="#" class="mc_banner"><img src="./images/temp_gallery.png" alt=""></a></div>
+												<div class="swiper-slide"><a href="#" class="mc_banner"><img src="./images/temp_413x220.png" alt=""></a></div>
 												<div class="swiper-slide"><a href="#" class="mc_banner"><img src="./images/temp_gallery_02.png" alt=""></a></div>
 												<div class="swiper-slide"><a href="#" class="mc_banner"><img src="./images/temp_img_outlet.png" alt=""></a></div>
 											</div>
@@ -228,12 +228,31 @@
 								</div>
 							</div>
 							<div class="mc_boxitem">
-								<div class="mc_box">
+								<div class="mc_box type2">
 									<div class="mc_title_row">
 										<h3 class="mc_title ico_07"><span class="mc_title_text">TO DO LIST</span></h3>
 									</div>
 									<div class="mc_content_row">
-										내용이 들어갑니다.
+										<ul class="text_getdata_list">
+											<li>
+												<a href="#" class="text_getdata">
+													<div class="getdata_main">홍길동님의 경조금 신청 결재가 반려되었습니다</div>
+													<div class="getdata_sub">2022.09.13</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="text_getdata">
+													<div class="getdata_main">홍길동님의 경조금 신청 결재가 반려되었습니다테스트테스트테스트테스트테스트테스트테스트테스트</div>
+													<div class="getdata_sub">2022.09.13</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="text_getdata">
+													<div class="getdata_main">홍길동님의 경조금 신청 결재가 반려되었습니다</div>
+													<div class="getdata_sub">2022.09.13</div>
+												</a>
+											</li>
+										</ul>
 									</div>
 									<a href="#" class="btn_mcmore"><span class="hdtext">더보기</span></a>
 								</div>
@@ -244,7 +263,56 @@
 										<h3 class="mc_title ico_08 "><span class="mc_title_text">부서원 기념일</span></h3>
 									</div>
 									<div class="mc_content_row">
-										내용이 들어갑니다.
+										<ul class="profile_multi_list">
+											<li>
+												<div class="profile_item_wrap">
+													<div class="profile_thum" style="background-image:url(./images/temp_100x100.png)"></div>
+													<div class="profile_spec_group">
+														<div class="profile_spec_main">
+															<div class="profile_spec_main_text">홍길동</div>
+															<div class="profile_spec_main_text">GD</div>
+														</div>
+														<div class="profile_spec_emp_box">9/1 생일</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="profile_item_wrap">
+													<div class="profile_thum" style="background-image:url(./images/temp_80x80.png)"></div>
+													<div class="profile_spec_group">
+														<div class="profile_spec_main">
+															<div class="profile_spec_main_text">홍길동</div>
+															<div class="profile_spec_main_text">GD</div>
+														</div>
+														<div class="profile_spec_emp_box">9/10 생일</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="profile_item_wrap">
+													<div class="profile_thum" style="background-image:url(./images/temp_100x100.png)"></div>
+													<div class="profile_spec_group">
+														<div class="profile_spec_main">
+															<div class="profile_spec_main_text">홍길동</div>
+															<div class="profile_spec_main_text">GD</div>
+														</div>
+														<div class="profile_spec_emp_box">9/1 생일</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="profile_item_wrap">
+													<div class="profile_thum" style="background-image:url(./images/temp_80x80.png)"></div>
+													<div class="profile_spec_group">
+														<div class="profile_spec_main">
+															<div class="profile_spec_main_text">홍길동</div>
+															<div class="profile_spec_main_text">GD</div>
+														</div>
+														<div class="profile_spec_emp_box">9/10 생일</div>
+													</div>
+												</div>
+											</li>
+										</ul>
 									</div>
 									<a href="#" class="btn_mcmore"><span class="hdtext">더보기</span></a>
 								</div>
@@ -257,9 +325,7 @@
 										<h3 class="mc_title ico_06"><span class="mc_title_text">일정표</span></h3>
 									</div>
 									<div class="mc_content_row">
-										<div class="mc_calendar_wrap">
-
-										</div>
+										<div class="mc_calendar_wrap"></div>
 									</div>
 								</div>
 							</div>
@@ -269,11 +335,60 @@
 			</section>
 			<!-- // middle -->
 			<script>
-				// calendar
-				$(".mc_calendar_wrap").datepicker({
-					monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
-					dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-					dateFormat: 'yy.mm.dd'
+				$(function(){
+					// banner
+					var main_banner = null;
+					if($(".mcbanner-container .swiper-slide").length>1){
+						main_banner = new Swiper(".mcbanner-container", {
+							speed : 800,
+							loop : true,
+							autoplay: {
+								delay: 2500,
+								disableOnInteraction: false
+							},
+							navigation: {
+								nextEl: '.mcbanner-zone .next_go',
+								prevEl: '.mcbanner-zone .prev_go',
+							}
+						});
+					}
+
+					// calendar
+					$(".mc_calendar_wrap").datepicker({
+						monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+						dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+						dateFormat: 'yy.mm.dd',
+						beforeShow : function(){
+							$(this).data('datepicker').inline = false;
+							var minValue = $(this).val();
+							minValue = $.datepicker.parseDate("yy.mm.dd", minValue);
+							dateChoice(minValue.getDate());
+						},
+						onSelect: function(date) {
+						},
+						onChangeMonthYear : function(){
+							dateChoice();
+						}
+					});
+
+					dateChoice();
+	
+					function dateChoice(choice_day){
+						// 선택자 지정
+						setTimeout(function(){
+							$("[data-handler^='selectDay']").each(function(){
+								$(this).attr("data-date",$(this).text());
+							});
+							choiceFunc(choice_day);
+						},50);
+					}
+					
+					function choiceFunc(choice_day){
+						var chioce_year_month = "[data-year^='2022'][data-month^='8']";
+						// 관리자 날짜 지정
+						$(chioce_year_month+"[data-date^='19']").append("<div class='calendar_text'>12</div>")
+						$(chioce_year_month+"[data-date^='5']").append("<div class='calendar_text'>1</div>")
+					}
 				});
 			</script>
 			@@include('./include/footer.html')
