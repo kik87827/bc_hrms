@@ -10,7 +10,7 @@
 .mc_boxitem_row{display:flex;}
 .mc_boxitem{flex:0 0 33.33333333333333333%;padding:5px;box-sizing: border-box;display:flex;min-width:0;}
 .mc_boxitem:last-of-type{}
-.mc_box{background:#fff;margin-right:10px;border:1px solid #d9d9d9;border-radius:8px;box-sizing: border-box;width:100%;height:100%;padding:0 24px;display:flex;flex-direction: column;position:relative;}
+.mc_box{background:#fff;margin-right:10px;min-width:0;border:1px solid #d9d9d9;border-radius:8px;box-sizing: border-box;width:100%;height:100%;padding:0 24px;display:flex;flex-direction: column;position:relative;}
 .mc_box:last-of-type{margin-right:0;}
 .mc_box.short_box{flex:0 0 215px;}
 .mc_box.type2 .mc_content_row{display:block;}
@@ -150,7 +150,7 @@
 .text_getdata{position:relative;display:flex;align-items: center;padding-left:24px;}
 .text_getdata:before{display:block;content:'';width:13px;height:13px;background:url("../images/icon_docu.png") no-repeat 0 0/100% auto;position:absolute;top:50%;left:0;transform: translateY(-50%);margin-top:1px;}
 .getdata_main{flex:1;min-width:0;white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%; font-size:14px;color:#4e4e4e;}
-.getdata_sub{display:inline-block;white-space: nowrap;flex:0;font-size:14px;color:#4e4e4e;font-family: 'NotoSans-DemiLight';}
+.getdata_sub{display:inline-block;white-space: nowrap;flex:0;font-size:14px;color:#4e4e4e;font-family: 'NotoSans-DemiLight';margin-left:10px;}
 .profile_multi_list{display:flex;padding:20px 0;width:100%;}
 .profile_multi_list .profile_item_wrap{padding:0;}
 .profile_multi_list > li{flex:0 0 25%;}
@@ -234,9 +234,6 @@
     .chart_item_group{display:block;}
     .chart_item_else{margin-top:20px;text-align: center;}
     .chart_quad_list{display:inline-block;}
-}
-
-@media (max-width:1400px){
     .mc_direct_menu_list{flex-wrap:wrap;margin:-10px 0;}
     .mc_direct_menu_list > li{flex:0 0 50%;padding: 10px 0;}
     .profile_multi_list{flex-wrap:wrap;margin:-10px 0;}
@@ -245,4 +242,7 @@
     .mc_count_item_list > li{padding: 10px 0;}
 
     .mc_title_text{font-size:16px;}
+}
+
+@media (max-width:1400px){
 }
