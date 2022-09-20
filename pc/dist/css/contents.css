@@ -6,7 +6,7 @@
 
 /* main */
 .middle_zone.main_contents_wrap{background:#f1f1f1;padding:25px 0;}
-.mc_boxitem_wrap{max-width:1600px;margin:0 auto;padding:0 30px;}
+.mc_boxitem_wrap{max-width:1600px;margin:0 auto;padding:0 25px;}
 .mc_boxitem_row{display:flex;}
 .mc_boxitem{flex:0 0 33.33333333333333333%;padding:5px;box-sizing: border-box;display:flex;min-width:0;}
 .mc_boxitem:last-of-type{}
