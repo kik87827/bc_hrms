@@ -320,7 +320,7 @@
 						</div>
 						<div class="mc_boxitem_else">
 							<div class="mc_boxitem">
-								<div class="mc_box">
+								<div class="mc_box type2">
 									<div class="mc_title_row">
 										<h3 class="mc_title ico_06"><span class="mc_title_text">일정표</span></h3>
 									</div>
@@ -363,6 +363,7 @@
 							var minValue = $(this).val();
 							minValue = $.datepicker.parseDate("yy.mm.dd", minValue);
 							dateChoice(minValue.getDate());
+							$(".mc_calendar_wrap .ui-datepicker-next").appendTo(".mc_calendar_wrap .ui-widget-header");
 						},
 						onSelect: function(date) {
 						},
@@ -370,8 +371,8 @@
 							dateChoice();
 						}
 					});
-
 					dateChoice();
+
 	
 					function dateChoice(choice_day){
 						// 선택자 지정
@@ -386,8 +387,8 @@
 					function choiceFunc(choice_day){
 						var chioce_year_month = "[data-year^='2022'][data-month^='8']";
 						// 관리자 날짜 지정
-						$(chioce_year_month+"[data-date^='19']").append("<div class='calendar_text'>12</div>")
-						$(chioce_year_month+"[data-date^='5']").append("<div class='calendar_text'>1</div>")
+						$(chioce_year_month+"[data-date^='19']").append("<div class='calendar_text_wrap'><a href='#' class='calendar_text'>12</a></div>");
+						$(chioce_year_month+"[data-date^='5']").append("<div class='calendar_text_wrap'><a href='#' class='calendar_text'>9</a></div>");
 					}
 				});
 			</script>

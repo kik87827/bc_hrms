@@ -60,7 +60,7 @@
 											<div class="profile_spec_main_text">GD</div>
 										</div>
 										<div class="profile_spec_sub">
-											<div class="profile_spec_sub_text">Active피플팀</div>
+											<div class="profile_spec_sub_text">경영기획본부</div>
 										</div>
 										<div class="profile_spec_sub2">
 											<a href="#" class="btn_quadobj">급여명세서 조회</a>
@@ -76,7 +76,7 @@
 								<h3 class="mc_title ico_02"><span class="mc_title_text">승인현황</span></h3>
 							</div>
 							<div class="mc_content_row has_design">
-								<ul class="mc_count_item_list">
+								<ul class="mc_count_item_list type2">
 									<li>
 										<div class="mc_count_item type2">
 											<div class="mc_count_box"><span class="mc_count_box_text">3</span></div>
@@ -152,7 +152,7 @@
 							</div>
 						</div>
 						<div class="mc_boxitem">
-							<div class="mc_box">
+							<div class="mc_box type2">
 								<div class="mc_title_row">
 									<h3 class="mc_title ico_11"><span class="mc_title_text">팀별 인원수</span></h3>
 								</div>
@@ -161,8 +161,8 @@
 										<table class="hor_tb">
 											<colgroup>
 												<col />
-												<col style="width:20%;" />
-												<col style="width:30%;" />
+												<col style="width:17%;" />
+												<col style="width:25%;" />
 											</colgroup>
 											<thead>
 												<tr>
@@ -302,7 +302,7 @@
 					</div>
 					<div class="mc_boxitem_else">
 						<div class="mc_boxitem">
-							<div class="mc_box">
+							<div class="mc_box type2">
 								<div class="mc_title_row">
 									<h3 class="mc_title ico_06"><span class="mc_title_text">일정표</span></h3>
 								</div>
@@ -345,14 +345,15 @@
 						var minValue = $(this).val();
 						minValue = $.datepicker.parseDate("yy.mm.dd", minValue);
 						dateChoice(minValue.getDate());
+						$(".mc_calendar_wrap .ui-datepicker-next").appendTo(".mc_calendar_wrap .ui-widget-header");
 					},
 					onSelect: function(date) {},
 					onChangeMonthYear: function() {
 						dateChoice();
 					}
 				});
-
 				dateChoice();
+
 
 				function dateChoice(choice_day) {
 					// 선택자 지정
@@ -367,8 +368,8 @@
 				function choiceFunc(choice_day) {
 					var chioce_year_month = "[data-year^='2022'][data-month^='8']";
 					// 관리자 날짜 지정
-					$(chioce_year_month + "[data-date^='19']").append("<div class='calendar_text'>12</div>")
-					$(chioce_year_month + "[data-date^='5']").append("<div class='calendar_text'>1</div>")
+					$(chioce_year_month + "[data-date^='19']").append("<div class='calendar_text_wrap'><a href='#' class='calendar_text'>12</a></div>");
+					$(chioce_year_month + "[data-date^='5']").append("<div class='calendar_text_wrap'><a href='#' class='calendar_text'>9</a></div>");
 				}
 			});
 		</script>
