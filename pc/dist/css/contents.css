@@ -232,7 +232,7 @@
     /* .mc_count_box,
     .mc_direct_menu:before{width:70px;height:70px;} */
     .chart_item_group{display:block;}
-    .chart_item_else{margin-top:20px;text-align: center;}
+    .chart_item_else{margin-top:20px;text-align: center;margin-left:0;}
     .chart_quad_list{display:inline-block;}
     .mc_direct_menu_list{flex-wrap:wrap;margin:-10px 0;}
     .mc_direct_menu_list > li{flex:0 0 50%;padding: 10px 0;}
