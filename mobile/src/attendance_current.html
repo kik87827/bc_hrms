@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/head.html')
+    <body class="front_body">
+        <div class="page_wrap">
+            @@include('./include/header_sub.html')
+            <!-- middle -->
+            <section class="middle_zone sub_type2">
+                <div class="middle_incontent">
+                    <div class="middle_title_row"><h3 class="middle_title">근태현황</h3></div>
+                    <div class="middle_content_row">
+                        <style>
+                            /* cell width 조절 */
+                            [name='rest_current_table'] .ctb_wid01{}
+                            [name='rest_current_table'] .ctb_wid02{width: 22%;}
+                            [name='rest_current_table'] .ctb_wid03{width: 22%;}
+                            [name='rest_current_table'] .ctb_wid04{width: 22%;}
+                            
+                            /* 작은사이즈 폰 359 이하 */
+                            @media(max-width:359px){
+                                
+                            }
+                        </style>
+                        <div class="vertical_item">
+                            <div class="vertical_title_row"><p class="pmid_ctit">휴가현황</p></div>
+                            <div class="vertical_content_row">
+                                <div class="tbsk_tb_w mtype2">
+                                    <table class="tbsk_tb" name="rest_current_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="ctb_wid01">구분</th>
+                                                <th class="ctb_wid02">생성일수</th>
+                                                <th class="ctb_wid03">사용일수</th>
+                                                <th class="ctb_wid04">잔여일수</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="bg_type2"><span class="tb_data type_label">신체단련</span></td>
+                                                <td><span class="tb_data">5</span></td>
+                                                <td><span class="tb_data">5</span></td>
+                                                <td><span class="tb_data">0</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bg_type2"><span class="tb_data type_label">연차</span></td>
+                                                <td><span class="tb_data">5</span></td>
+                                                <td><span class="tb_data">5</span></td>
+                                                <td><span class="tb_data">0</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="vertical_item">
+                            <div class="vertical_title_row">
+                                <p class="pmid_ctit">시간외현황</p>
+                                <div classs="vtitle_else_wrap">
+                                    <p class="vtitle_else_text">기간 : 22.09.17(토) ~ 22.09.23(금)</p>
+                                </div>
+                            </div>
+                            <div class="vertical_content_row">
+                                <div class="tbsk_tb_w mtype2">
+                                    <table class="tbsk_tb" name="rest_current_table">
+                                        <thead>
+                                            <tr>
+                                                <th class="ctb_wid01">구분</th>
+                                                <th class="ctb_wid02">한도시간</th>
+                                                <th class="ctb_wid03">사용시간</th>
+                                                <th class="ctb_wid04">잔여시간</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="bg_type2"><span class="tb_data type_label">시간외근무</span></td>
+                                                <td><span class="tb_data">12:00</span></td>
+                                                <td><span class="tb_data">00:00</span></td>
+                                                <td><span class="tb_data">12:00</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // middle -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/head.html')
+    <body class="front_body">
+        <div class="page_wrap">
+            @@include('./include/header_sub.html')
+            <!-- middle -->
+            <section class="middle_zone sub_type2">
+                <div class="middle_incontent">
+                    <div class="middle_title_row"><h3 class="middle_title">사진변경신청</h3></div>
+                    <div class="middle_content_row type2">
+                        <div class="fvtb_w type3">
+							<table class="fvtb">
+								<tbody>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청자</span></th>
+										<td class="has_fitem"><input type="text" class="fvint" disabled value="홍길동(인사팀)"></td>
+									</tr>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청일</span></th>
+										<td class="has_fitem"><input type="text" class="fvint" disabled value="2020.12.26"></td>
+									</tr>
+									<tr>
+										<td colspan="2" class="has_fphoto">
+											<div class="fphoto_tb_w">
+												<div class="fphoto_tb">
+													<div class="fphoto_td fphoto_cell_left">
+														<!-- -->
+														<div class="fphoto_z">
+															<div class="fphoto_w" style="background-image:url(./images/bot_f4.png)"></div>
+														</div>
+														<!-- // -->
+													</div>
+													<div class="fphoto_td fphoto_cell_right">
+														<div class="fileui_tb_w">
+															<div class="fileui_tb">
+																<div class="fileui_td has_btn">
+																	<div class="fkef_tb2_w">
+																		<input type="file" class="fkef_file">
+																		<a href="javascript:;" class="btn_fakefile">파일 선택</a>
+																	</div>
+																</div>
+																<div class="fileui_td">
+																	<div class="filename_para">선택된 파일 없음</div>
+																</div>
+															</div>
+														</div>
+														<script>
+															$(function(){
+																$(".btn_fakefile").on("click",function(){
+																	$(this).prev(".fkef_file").trigger("click");
+																});
+																$(".fkef_file").on("change",function(){
+																	var fileValue = $(this).val().split("\\");
+																	var fileName = fileValue[fileValue.length-1]; 
+																	$(".filename_para").text(fileName);
+																});
+															});
+														</script>
+														<p class="imp_para mt10">사진파일은 <span class="bdsym">jpg</span>형식이고, 용량이 <span class="bdsym">300</span>KB를 넘을 수 없습니다.</p>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청사유</span></th>
+										<td class="has_fitem"><input type="text" class="fvint" value="인사사진 변경신청"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="btn_fsm_w">
+							<a href="javascript:;" class="btn_fsm">결재요청</a>
+						</div>
+                        <div class="acitem_z">
+							<div class="acitem_w">
+								<a href="javascript:;" class="btn_acitem"><span class="acitem_text">결재선</span></a>
+								<div class="accont_w">
+									<div class="tbsk_tb_w">
+										<table class="tbsk_tb">
+											<thead>
+												<tr>
+													<th class="ctb_w01">구분</th>
+													<th class="ctb_w02">성명</th>
+													<th class="ctb_w03">상태</th>
+													<th class="ctb_w04">결재완료일</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>기안자</th>
+													<td>홍길동</td>
+													<th>결재</th>
+													<td>2020.06.25</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+            <!-- // middle -->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/head.html')
+    <body class="front_body">
+        <div class="page_wrap">
+            @@include('./include/header_sub.html')
+            <!-- middle -->
+            <section class="middle_zone sub_type2">
+                <div class="middle_incontent">
+                    <div class="middle_title_row"><h3 class="middle_title">제증명 신청</h3></div>
+                    <div class="middle_content_row type2">
+                        <div class="fvtb_w type3">
+							<table class="fvtb">
+								<tbody>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청자</span></th>
+										<td class="has_fitem"><input type="text" class="fvint" disabled value="홍길동(인사팀)"></td>
+									</tr>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청일</span></th>
+										<td class="has_fitem"><input type="text" class="fvint" disabled value="2020.12.26"></td>
+									</tr>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">증명서종류</span></th>
+										<td class="has_fitem">
+                                            <select class="dsel">
+                                                <option>재직증명서</option>
+                                            </select>
+                                        </td>
+									</tr>
+                                    <tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청부수</span></th>
+										<td class="has_fitem"><input type="text" class="fvint short_count" style="width:50px"></td>
+									</tr>
+                                    <tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">한글주소</span></th>
+										<td class="has_fitem"><input type="text" class="fvint"></td>
+									</tr>
+                                    <tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">신청사유</span></th>
+										<td class="has_fitem"><input type="text" class="fvint"></td>
+									</tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="btn_fsm_w">
+							<a href="javascript:;" class="btn_fsm">결재요청</a>
+						</div>
+                        <div class="acitem_z">
+							<div class="acitem_w">
+								<a href="javascript:;" class="btn_acitem"><span class="acitem_text">결재선</span></a>
+								<div class="accont_w">
+									<div class="tbsk_tb_w">
+										<table class="tbsk_tb">
+											<thead>
+												<tr>
+													<th class="ctb_w01">구분</th>
+													<th class="ctb_w02">성명</th>
+													<th class="ctb_w03">상태</th>
+													<th class="ctb_w04">결재완료일</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th>기안자</th>
+													<td>홍길동</td>
+													<th>결재</th>
+													<td>2020.06.25</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+            <!-- // middle -->
+        </div>
+    </body>
+</html>
