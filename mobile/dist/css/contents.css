@@ -386,12 +386,13 @@ select.dsel:disabled{background-color:#f7f7f7;color:#999999;}
 .btn_fsm_w.type2{padding-top:12.5px;}
 .btn_fsm{display:block;background:#3070b7;border:1px solid #3070b7;padding:10px 0 10.5px;border-radius:100px;text-align:center;color:#fff;font-family: 'NotoSans-Medium';font-size:13.5px;}
 .btn_fsm.type2{background:#fff;color:#3070b7;border-color:#3070b7;}
+.btn_fsm.d_type2{display:flex;justify-content: center;align-items: center;}
 .btn_fsm_fxwrap{display:flex;margin:0 -4.25px;}
 .btn_fsm_fxwrap > .btn_fsm{flex:1;margin:0 4.25px;}
 
-.btn_fsm.active .toggle_text:before{content:'-';}
-.toggle_text{display:inline-block;margin-right:5px;}
-.toggle_text:before{display:block;content:'+'}
+.btn_fsm.active .toggle_ico{background-position:0 100%;}
+.toggle_text{display:inline-block;line-height:1;}
+.toggle_ico{display:inline-block;flex:0 0 7px;content:'';width:7px;height:7px;background:url("../images/ico_txplus2.png") no-repeat 0 0/100% auto;margin-right:5px;font-size:0;line-height:0;}
 .acitem_z{padding:5px 15px 0;}
 .acitem_z.type2{padding-top:20px;}
 .acitem_w{margin-bottom:5px;}
@@ -487,6 +488,7 @@ input.dlsort_int{height:30px;padding-left:10px;padding-right:10px;line-height:1;
 .data_tb td:last-of-type{border-right:0;}
 .data_tb thead th{border-right:1px solid #d9d9d9;border-bottom:1px solid #585858;}
 .data_tb tbody td{border-right:1px solid #d9d9d9;}
+.data_tb tbody td.align_left{text-align: left;}
 .data_tb tbody td.has_ico{font-size:0;line-height:0;}
 .data_tb .has_wpsp{width:1px;padding-left:10px;padding-right:10px;}
 .data_tb .has_norsp{}
