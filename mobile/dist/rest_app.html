@@ -80,12 +80,123 @@
 				<div class="middle_title_row">
 					<h3 class="middle_title">콘도이용 신청</h3>
 				</div>
-				<div class="middle_content_row">
-					내용이 들어갑니다.
+				<div class="middle_content_row type2">
+					<div class="fvtb_w type3">
+						<table class="fvtb">
+							<tbody>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">콘도</span></th>
+									<td class="has_fitem" colspan="3"><input type="text" class="fvint"></td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">지역</span></th>
+									<td class="has_fitem" colspan="3"><input type="text" class="fvint"></td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">평형</span></th>
+									<td class="has_fitem" colspan="3"><input type="text" class="fvint"></td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">이용일자</span></th>
+									<td class="has_fitem" colspan="3">
+										<div class="fvinitem_list_w">
+											<ul class="fvinitem_list">
+												<li><input type="date" class="input_calendar"></li>
+												<li class="has_fvelse3"><span class="fvelse">~</span></li>
+												<li><input type="date" class="input_calendar"></li>
+											</ul>
+										</div>
+										<div class="rdchkitem_list_w">
+											<ul class="rdchkitem_list inline_type2">
+												<li>
+													<div class="rdchkitem">
+														<input type="radio" class="rdchk" name="day" id="day01">
+														<label for="day01" class="rdchk_lab">1박</label>
+													</div>
+												</li>
+												<li>
+													<div class="rdchkitem">
+														<input type="radio" class="rdchk" name="day" id="day02">
+														<label for="day02" class="rdchk_lab">2박</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">구분</span></th>
+									<td class="has_fitem" colspan="3"><select class="dsel">
+											<option>복지지원비</option>
+										</select></td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp">이용요금</span></th>
+									<td class="has_fitem">
+										<div class="unit_form">
+											<input type="text" class="fvint aright">
+											<span class="unit_text">원</span>
+										</div>
+									</td>
+									<th class="has_fvth_sp"><span class="fvth_sp">이용Point</span></th>
+									<td class="has_fitem">
+										<div class="unit_form">
+											<input type="text" class="fvint aright">
+											<span class="unit_text">점</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp">입실시간</span></th>
+									<td class="has_fitem" colspan="3">
+										<input type="time" class="input_time">
+									</td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp">차량번호</span></th>
+									<td class="has_fitem" colspan="3"><input type="text" class="fvint"></td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">휴대폰</span></th>
+									<td class="has_fitem" colspan="3"><input type="text" class="fvint"></td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp imp">업무여부</span></th>
+									<td class="has_fitem" colspan="3">
+										<div class="rdchkitem_list_w">
+											<ul class="rdchkitem_list inline_type2">
+												<li>
+													<div class="rdchkitem">
+														<input type="radio" class="rdchk" name="work" id="work01">
+														<label for="work01" class="rdchk_lab">개인</label>
+													</div>
+												</li>
+												<li>
+													<div class="rdchkitem">
+														<input type="radio" class="rdchk" name="work" id="work02">
+														<label for="work02" class="rdchk_lab">업무용</label>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th class="has_fvth_sp"><span class="fvth_sp">신청사유</span></th>
+									<td class="has_fitem" colspan="3">
+										<textarea class="fvta"></textarea>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- // middle -->
+		<div class="btn_bottomlayer_wrap">
+			<a href="javascript:;" class="btn_fsm">신청</a>
+		</div>
 	</div>
 </body>
 

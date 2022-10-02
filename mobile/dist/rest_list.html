@@ -78,10 +78,97 @@
 		<section class="middle_zone sub_type2">
 			<div class="middle_incontent">
 				<div class="middle_title_row">
-					<h3 class="middle_title">가용콘도 List</h3>
+					<h3 class="middle_title">가용콘도 리스트</h3>
 				</div>
 				<div class="middle_content_row">
-					내용이 들어갑니다.
+					<style>
+						/* cell width 조절 */
+						[name='possible_table'] .ctb_wid01 {}
+
+						[name='possible_table'] .ctb_wid02 {
+							width: 22%;
+						}
+
+						[name='possible_table'] .ctb_wid03 {
+							width: 22%;
+						}
+
+						[name='possible_table'] .ctb_wid04 {
+							width: 15%;
+						}
+
+						[name='possible_table'] .ctb_wid05 {
+							width: 15%;
+						}
+
+						/* 작은사이즈 폰 767 이하 */
+						@media(max-width:767px) {}
+
+						@media(max-width:359px) {}
+					</style>
+					<div class="hvtb_w type2 mtype2">
+						<table class="hvtb ptype2" name="possible_table">
+							<thead>
+								<tr>
+									<th class="ctb_wid01">콘도명</th>
+									<th colspan="2">지역명</th>
+									<th class="ctb_wid04" rowspan="2">선택</th>
+									<th class="ctb_wid05" rowspan="2">취소</th>
+								</tr>
+								<tr>
+									<th class="ctb_wid01">평형</th>
+									<th class="ctb_wid02">이용시작일</th>
+									<th class="ctb_wid03">이용종료일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="ctb_wid01 align_left"><span class="tb_data">소노호텔앤리조트</span></td>
+									<td class="align_left" colspan="2"><span class="tb_data">비발디-소노벨BC</span></td>
+									<td class="ctb_wid04" rowspan="2"></td>
+									<td class="ctb_wid05" rowspan="2"><a href="#" class="btn_csm xsm">취소</a></td>
+								</tr>
+								<tr>
+									<td class="align_left"><span class="tb_data">패밀리 온돌형</span></td>
+									<td><span class="tb_data">2022-09-07</span></td>
+									<td><span class="tb_data">2022-09-07</span></td>
+								</tr>
+								<tr>
+									<td class="ctb_wid01 align_left"><span class="tb_data">소노캄제주</span></td>
+									<td class="align_left" colspan="2"><span class="tb_data">비발디-소노벨BC</span></td>
+									<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">선택</a></td>
+									<td class="ctb_wid05" rowspan="2"></td>
+								</tr>
+								<tr>
+									<td class="align_left"><span class="tb_data">패밀리 온돌형</span></td>
+									<td><span class="tb_data">2022-09-07</span></td>
+									<td><span class="tb_data">2022-09-07</span></td>
+								</tr>
+								<tr>
+									<td class="ctb_wid01 align_left"><span class="tb_data">소노캄제주</span></td>
+									<td class="align_left" colspan="2"><span class="tb_data">비발디-소노벨BC</span></td>
+									<td class="ctb_wid04" rowspan="2"><a href="#" class="btn_csm xsm">선택</a></td>
+									<td class="ctb_wid05" rowspan="2"></td>
+								</tr>
+								<tr>
+									<td class="align_left"><span class="tb_data">패밀리 온돌형</span></td>
+									<td><span class="tb_data">2022-09-07</span></td>
+									<td><span class="tb_data">2022-09-07</span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="pagination">
+						<a href="#none" class="first">Go to first</a>
+						<a href="#none" class="prev">Go to prev</a>
+						<a href="#none" class="num on">1</a>
+						<a href="#none" class="num">2</a>
+						<a href="#none" class="num">3</a>
+						<a href="#none" class="num">4</a>
+						<a href="#none" class="num">5</a>
+						<a href="#none" class="next">Go to next</a>
+						<a href="#none" class="last">Go to last</a>
+					</div>
 				</div>
 			</div>
 		</section>

@@ -8,11 +8,154 @@
             <section class="middle_zone sub_type2">
                 <div class="middle_incontent">
                     <div class="middle_title_row"><h3 class="middle_title">복지지원비 신청</h3></div>
-                    <div class="middle_content_row">
-                        내용이 들어갑니다.
+                    <div class="middle_content_row type2">
+                        <div class="fvtb_w type3">
+							<table class="fvtb">
+								<tbody>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">기간</span></th>
+										<td class="has_fitem">
+                                            <div class="fvinitem_list_w">
+                                                <ul class="fvinitem_list">
+                                                    <li><input type="date" class="input_calendar"></li>
+                                                    <li class="has_fvelse3"><span class="fvelse">~</span></li>
+                                                    <li><input type="date" class="input_calendar"></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+									</tr>
+									<tr>
+										<th class="has_fvth_sp"><span class="fvth_sp imp">구분</span></th>
+										<td class="has_fitem"><select class="dsel"><option>복지지원비</option></select></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+                        <div class="btn_csm_w">
+							<a href="javascript:;" class="btn_csm type3">조회</a>
+							<a href="javascript:;" class="btn_csm type3">신청</a>
+							<a href="javascript:;" class="btn_csm type3">신청내역</a>
+						</div>
+                        <style>
+                            /* cell width 조절 */
+                            [name='welfare_table'] .ctb_wid01{width: 25px;}
+                            [name='welfare_table'] .ctb_wid02{}
+                            [name='welfare_table'] .ctb_wid03{width:21%;}
+                            [name='welfare_table'] .ctb_wid04{width:20%;}
+                            [name='welfare_table'] .ctb_wid05{width:22%;}
+                            
+                            /* 작은사이즈 폰 767 이하 */
+                            @media(max-width:767px){
+                                [name='welfare_table'] .ctb_wid03{width:16%;}
+                                [name='welfare_table'] .ctb_wid04{width:14%;}
+                                [name='welfare_table'] .ctb_wid05{width:14%;}
+                            }
+                            @media(max-width:359px){
+                                [name='welfare_table'] .ctb_wid03{width:13%;}
+                                [name='welfare_table'] .ctb_wid04{width:13%;}
+                                [name='welfare_table'] .ctb_wid05{width:13%;}
+                            }
+                        </style>
+                        <div class="data_tb_z" name="welfare_table" data-scrollrow = "5">
+                            <div class="data_tb_w define_thead">
+                                <table class="data_tb type2">
+                                    <thead>
+                                        <tr>
+                                            <th class="ctb_wid01 has_wpsp has_ico"><span class="d_wpsp">선택</span></th>
+                                            <th class="ctb_wid02 has_norsp"><span class="d_norsp">승인일자</span></th>
+                                            <th class="ctb_wid03 has_norsp"><span class="d_norsp">가맹점명</span></th>
+                                            <th class="ctb_wid04 has_norsp"><span class="d_norsp">업종명</span></th>
+                                            <th class="ctb_wid05 has_norsp"><span class="d_norsp">사용금액</span></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="data_tb_w define_tbody">
+                                <table class="data_tb type2">
+                                    <tbody>
+                                        <tr>
+                                            <td class="ctb_wid01 has_wpsp has_ico">
+                                                <input type="checkbox" class="rdchk">
+                                            </td>
+                                            <td class="ctb_wid02 has_norsp"><span class="d_norsp">2022.08.30</span></td>
+                                            <td class="ctb_wid03 has_norsp"><span class="d_norsp">을지약국</span></td>
+                                            <td class="ctb_wid04 has_norsp align_left"><span class="d_norsp">약국</span></td>
+                                            <td class="ctb_wid05 has_norsp align_right"><span class="d_norsp">5,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ctb_wid01 has_wpsp has_ico">
+                                                <input type="checkbox" class="rdchk">
+                                            </td>
+                                            <td class="ctb_wid02 has_norsp"><span class="d_norsp">2022.08.30</span></td>
+                                            <td class="ctb_wid03 has_norsp"><span class="d_norsp">을지약국</span></td>
+                                            <td class="ctb_wid04 has_norsp align_left"><span class="d_norsp">슈퍼마켓</span></td>
+                                            <td class="ctb_wid05 has_norsp align_right"><span class="d_norsp">18,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ctb_wid01 has_wpsp has_ico">
+                                                <input type="checkbox" class="rdchk">
+                                            </td>
+                                            <td class="ctb_wid02 has_norsp"><span class="d_norsp">2022.08.30</span></td>
+                                            <td class="ctb_wid03 has_norsp"><span class="d_norsp">을지약국</span></td>
+                                            <td class="ctb_wid04 has_norsp align_left"><span class="d_norsp">약국</span></td>
+                                            <td class="ctb_wid05 has_norsp align_right"><span class="d_norsp">5,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ctb_wid01 has_wpsp has_ico">
+                                                <input type="checkbox" class="rdchk">
+                                            </td>
+                                            <td class="ctb_wid02 has_norsp"><span class="d_norsp">2022.08.30</span></td>
+                                            <td class="ctb_wid03 has_norsp"><span class="d_norsp">을지약국</span></td>
+                                            <td class="ctb_wid04 has_norsp align_left"><span class="d_norsp">약국</span></td>
+                                            <td class="ctb_wid05 has_norsp align_right"><span class="d_norsp">5,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ctb_wid01 has_wpsp has_ico">
+                                                <input type="checkbox" class="rdchk">
+                                            </td>
+                                            <td class="ctb_wid02 has_norsp"><span class="d_norsp">2022.08.30</span></td>
+                                            <td class="ctb_wid03 has_norsp"><span class="d_norsp">을지약국</span></td>
+                                            <td class="ctb_wid04 has_norsp align_left"><span class="d_norsp">슈퍼마켓</span></td>
+                                            <td class="ctb_wid05 has_norsp align_right"><span class="d_norsp">18,000</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ctb_wid01 has_wpsp has_ico">
+                                                <input type="checkbox" class="rdchk">
+                                            </td>
+                                            <td class="ctb_wid02 has_norsp"><span class="d_norsp">2022.08.30</span></td>
+                                            <td class="ctb_wid03 has_norsp"><span class="d_norsp">을지약국</span></td>
+                                            <td class="ctb_wid04 has_norsp align_left"><span class="d_norsp">약국</span></td>
+                                            <td class="ctb_wid05 has_norsp align_right"><span class="d_norsp">5,000</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="copy_form_bottom">
+                            <ul class="indent_item_list type2">
+                                <li>
+                                    <span class="indent_bullet">※</span>
+                                    <div class="indent_text_group">일자간 조회 가능범위 : 1개월</div>
+                                </li>
+                                <li>
+                                    <span class="indent_bullet">※</span>
+                                    <div class="indent_text_group">취소 결제건은 제외 후 신청 부탁드립니다.</div>
+                                </li>
+                                <li>
+                                    <span class="indent_bullet">※</span>
+                                    <div class="indent_text_group">한도현황 조회는 PC에서 할 수 있습니다.</div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
+            <script>
+                window.addEventListener("load",()=>{
+                    // scroll table
+                    scrollTable();
+                });
+            </script>
             <!-- // middle -->
         </div>
     </body>

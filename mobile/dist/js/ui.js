@@ -5,13 +5,65 @@ var touchstart = "ontouchstart" in window;
 
 document.addEventListener("DOMContentLoaded", function() {
   commonInit();
+  
 });
 
 $(function(){
   dimLayerControl();
   actog();
   dataToggleFunc();
-})
+  fixedBottom();
+});
+
+function fixedBottom(){
+  const btn_bottomlayer_wrap = document.querySelector(".btn_bottomlayer_wrap");
+  const page_wrap = document.querySelector(".page_wrap");
+  action();
+  window.addEventListener("resize",()=>{
+    action();
+  });
+  function action(){
+    if(btn_bottomlayer_wrap !== null){
+      page_wrap.style.paddingBottom = btn_bottomlayer_wrap.getBoundingClientRect().height + "px";
+    }
+  }
+}
+
+function scrollTable(){
+  const data_tb_z = document.querySelectorAll(".data_tb_z");
+  if(data_tb_z.length===0){return;}
+  action();
+  window.addEventListener("resize",()=>{
+    action();
+  });
+  function action(){
+    data_tb_z.forEach((element)=>{
+      const thisObj = element;
+      let datarow = thisObj.getAttribute("data-scrollrow");
+      const thisHead = thisObj.querySelector(".define_thead");
+      const thisBody = thisObj.querySelector(".define_tbody");
+      const targetRow = thisBody.querySelectorAll("tr")[datarow];
+      let scrollWid = getScrollBarWidth();
+      if(targetRow !== undefined && thisHead !== null){
+        thisBody.style.maxHeight = targetRow.offsetTop + "px";
+        thisHead.style.paddingRight = `${scrollWid}px`;
+      }
+    });
+  }
+}
+
+function getScrollBarWidth() {
+	let outerDivitem = document.createElement('div');
+  let innerDivitem = document.createElement('div');
+  let getWidth = 0;
+  outerDivitem.setAttribute("style",`width: 100px; overflow:scroll; height:100px;outline:1px solid red`)
+  document.body.append(outerDivitem);
+  outerDivitem.append(innerDivitem);
+  innerDivitem.setAttribute("style",`width: 100%;height:110%;`)
+  getWidth = innerDivitem.getBoundingClientRect().width;
+  outerDivitem.remove();
+  return 100 - getWidth;
+};
 
 function commonInit() {
   var touchstart = "ontouchstart" in window;

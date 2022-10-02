@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/head.html')
+    <body class="front_body">
+        <div class="page_wrap">
+            @@include('./include/header_sub.html')
+            <!-- middle -->
+            <section class="middle_zone sub_type2">
+                <div class="middle_incontent">
+                    <div class="middle_title_row"><h3 class="middle_title">치료비(치료비)</h3></div>
+                    <div class="middle_content_row">
+                        <div class="space_both_row">
+                            <a href="#" class="btn_history_back"><span class="hdtext">뒤로가기</span></a>
+                            <div class="count_item_group">
+                                <span class="count_current">3</span>
+                                <span class="count_part">/</span>
+                                <span class="count_length">3</span>
+                            </div>
+                        </div>
+                        <div class="hvtb_w mtype2">
+                            <table class="hvtb ptype2">
+                                <thead>
+                                    <tr>
+                                        <th class="ctb_wid01">구분</th>
+                                        <th class="ctb_wid02">급여항목</th>
+                                        <th class="ctb_wid03">비급여항목</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><div class="hvdata_label">일반</div></td>
+                                        <td><input type="text" class="fvint"></td>
+                                        <td><input type="text" class="fvint"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="hvdata_label">물리치료</div></td>
+                                        <td><input type="text" class="fvint"></td>
+                                        <td><input type="text" class="fvint"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="hvdata_label">치과</div></td>
+                                        <td><input type="text" class="fvint"></td>
+                                        <td><input type="text" class="fvint"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div class="hvdata_label">한방</div></td>
+                                        <td><input type="text" class="fvint"></td>
+                                        <td><input type="text" class="fvint"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="acitem_z type3">
+                            <div class="acitem_w">
+								<a href="javascript:;" class="btn_acitem">신청안내</a>
+								<div class="accont_w">
+                                    <div class="copy_form_bottom type4">
+                                        <ul class="indent_item_list type4">
+                                            <li>
+                                                <div class="indent_item">
+                                                    <span class="indent_bullet">※</span>
+                                                    <div class="indent_text_group">
+                                                        치료비 신청 시 첨부파일 스캔 및 업로드 방법 안내 드립니다.
+                                                        <ul class="design_check_list mt0">
+                                                            <li>기기 : IOS, Android</li>
+                                                            <li>스캔어플(무료) : vflat 등</li>
+                                                            <li>첨부파일 형식 : jpg, bmp, png만 가능(제외: pdf, zip)</li>
+                                                            <li>
+                                                                첨부파일 업로드 방법 : <br>
+                                                                스캔 어플 > 증명서류 촬영 > 갤러리 저장 > 첨부파일 업로드<br>
+                                                                (기본 카메라 촬영 시 화질문제로 반려 될 수 있음)
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="acitem_w">
+								<a href="javascript:;" class="btn_acitem">첨부파일</a>
+								<div class="accont_w">
+									<div class="fileui_tb_w">
+										<div class="fileui_tb">
+											<div class="fileui_td has_btn">
+												<div class="fkef_tb2_w">
+													<input type="file" class="fkef_file">
+													<a href="javascript:;" class="btn_fakefile">파일 선택</a>
+												</div>
+											</div>
+											<div class="fileui_td">
+												<div class="filename_para">선택된 파일 없음</div>
+											</div>
+											<div class="fileui_td has_btn">
+												<a href="javascript:;" class="btn_fakefile">파일 등록</a>
+											</div>
+										</div>
+									</div>
+									<script>
+										$(function(){
+											$(".btn_fakefile").on("click",function(){
+												$(this).prev(".fkef_file").trigger("click");
+											});
+											$(".fkef_file").on("change",function(){
+                                                var fileValue = $(this).val().split("\\");
+                                                var fileName = fileValue[fileValue.length-1]; 
+                                                $(this).parents(".fileui_tb_w").find(".filename_para").text(fileName);
+                                            });
+										});
+									</script>
+									<div class="tbsk_tb_w">
+										<table class="tbsk_tb">
+											<thead>
+												<tr>
+													<th class="ctb2_w01">파일명</th>
+													<th class="ctb2_w02">용량</th>
+													<th class="ctb2_w03">삭제</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="has_data">첨부파일.jpg</td>
+													<td>14KB</td>
+													<td><a href="javascript:;" class="btn_ctblink">삭제</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- // middle -->
+            <div class="btn_bottomlayer_wrap">
+                <a href="javascript:;" class="btn_fsm">신청</a>
+            </div>
+        </div>
+    </body>
+</html>

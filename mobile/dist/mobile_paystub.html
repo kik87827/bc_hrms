@@ -81,7 +81,168 @@
 					<h3 class="middle_title">급여명세서</h3>
 				</div>
 				<div class="middle_content_row">
-					내용이 들어갑니다.
+					<div class="dbox_group_zone">
+						<div class="dbox_group">
+							<div class="dbox">
+								<div class="dbox_title_row">
+									<p class="dbox_title">2021년 3월 정기급여</p>
+								</div>
+								<div class="dbox_content_row">
+									<div class="dprice_item_group">
+										<div class="dprice_item">
+											<span class="dprice_text">6,000,000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dbox dtype2">
+								<div class="dbox_title_row">
+									<p class="dbox_ico_item"><span class="dbox_ico_text">지급금액</span></p>
+								</div>
+								<div class="dbox_content_row">
+									<div class="dprice_item_group">
+										<div class="dprice_item type2">
+											<span class="dprice_text">12,579,445</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dbox dtype3 size2">
+								<div class="dbox_title_row type2">
+									<div class="dbox_sub_ico"></div>
+									<p class="dbox_sub_title">공제금액</p>
+								</div>
+								<div class="dbox_content_row">
+									<div class="dprice_item_group">
+										<div class="dprice_item type2">
+											<span class="dprice_text">12,579,445</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="dbox dtype4 size2">
+								<div class="dbox_title_row type2">
+									<div class="dbox_sub_ico type2"></div>
+									<p class="dbox_sub_title">근무시간</p>
+								</div>
+								<div class="dbox_content_row">
+									<div class="dprice_item_group">
+										<span class="dvalue">250h</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<style>
+						/* cell width 조절 */
+						[name='pay_history_table'] .ctb_wid01 {
+							width: 40%;
+						}
+
+						[name='pay_history_table'] .ctb_wid02 {}
+
+						[name='pay_total_table'] .ctb_wid01 {
+							width: 60%;
+						}
+
+						[name='pay_total_table'] .ctb_wid02 {}
+
+						/* 작은사이즈 폰 359 이하 */
+						@media(max-width:359px) {}
+					</style>
+					<div class="vertical_item_wrap">
+						<div class="vertical_item">
+							<div class="vertical_title_row">
+								<p class="pmid_ctit">지급내역</p>
+							</div>
+							<div class="vertical_content_row">
+								<div class="tbsk_tb_w mtype2">
+									<table class="tbsk_tb" name="pay_history_table">
+										<thead>
+											<tr>
+												<th class="ctb_wid01">항목</th>
+												<th class="ctb_wid02">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="bg_type2"><span class="tb_data type_label">기본급</span></td>
+												<td class="align_right"><span class="tb_data">6,000,000</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="vertical_item">
+							<div class="vertical_title_row">
+								<p class="pmid_ctit">공제내역</p>
+							</div>
+							<div class="vertical_content_row">
+								<div class="tbsk_tb_w mtype2">
+									<table class="tbsk_tb" name="pay_history_table">
+										<thead>
+											<tr>
+												<th class="ctb_wid01">항목</th>
+												<th class="ctb_wid02">금액</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="bg_type2"><span class="tb_data type_label">기본급</span></td>
+												<td class="align_right"><span class="tb_data">6,000,000</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="vertical_item">
+							<div class="vertical_title_row">
+								<p class="pmid_ctit">근로 상세 내역</p>
+							</div>
+							<div class="vertical_content_row">
+								<div class="tbsk_tb_w mtype2">
+									<table class="tbsk_tb" name="pay_total_table">
+										<tbody>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">총 근로일 수</span></td>
+												<td class="ctb_wid02"><span class="tb_data">21</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">총 근로시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">171:09</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">연장근로시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">004:43</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">연장근로 보상시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">004:43</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">휴일근로시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">000:00</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">휴일근로 보상시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">000:00</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">야간근로시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">000:00</span></td>
+											</tr>
+											<tr>
+												<td class="ctb_wid01 bg_type2"><span class="tb_data type_label">야간보상시간</span></td>
+												<td class="ctb_wid02"><span class="tb_data">000:00</span></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
