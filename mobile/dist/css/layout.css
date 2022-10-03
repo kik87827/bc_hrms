@@ -2,7 +2,7 @@
 /*
 	컨텐츠 css
 */
-.page_wrap{position:relative;padding-top:51px;min-width:280px;}
+.page_wrap{position:relative;padding-top:50px;min-width:280px;}
 .header_zone{width:100%;background:#fff;box-sizing:border-box;border-bottom:1px solid #b8b8b8;height:50px;text-align: center;padding:0 50px 0 15px;position:fixed;top:0;left:0;z-index:50}
 .header_zone.type2{background:url("../images/bg_header.png") no-repeat 0 0/cover;}
 .header_zone.type2 .btn_mobile_menu_obj,
@@ -46,11 +46,11 @@
 .mblog_sym{color:#fff;font-family: 'NotoSans-Medium';}
 .mbmenu_low{position:relative;overflow-y:auto;flex:1;}
 .mbmenu_one{
-    display:block;color:#333333;font-size:17px;padding:15px 55px 15px 20px;line-height:1;position:relative;font-family: 'NotoSans-Medium';
+    display:block;color:#333333;font-size:12px;padding:15px 55px 15px 20px;line-height:1;position:relative;font-family: 'NotoSans-Medium';
 }
 .mbmenu_one:after{
 	display:block;content:'';width:7px;height:7px;border-right:2px solid #888888;border-bottom:2px solid #888;
-	position:absolute;top:19px;right:26px;
+	position:absolute;top:16px;right:23px;
 	transform: translateZ(0);-webkit-transform: translateZ(0);-ms-transform: translateZ(0);-moz-transform: translateZ(0);
 	-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);
 }
