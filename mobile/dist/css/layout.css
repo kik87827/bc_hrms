@@ -3,6 +3,9 @@
 	컨텐츠 css
 */
 .page_wrap{position:relative;padding-top:50px;min-width:280px;}
+.page_wrap.field_container_wrap{padding-top:0;}
+.page_wrap.field_container_wrap .header_zone{position:relative;}
+.page_wrap.field_container_wrap .header_zone{position:relative;}
 .header_zone{width:100%;background:#fff;box-sizing:border-box;border-bottom:1px solid #b8b8b8;height:50px;text-align: center;padding:0 50px 0 15px;position:fixed;top:0;left:0;z-index:50}
 .header_zone.type2{background:url("../images/bg_header.png") no-repeat 0 0/cover;}
 .header_zone.type2 .btn_mobile_menu_obj,
