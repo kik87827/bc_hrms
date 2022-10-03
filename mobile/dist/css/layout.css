@@ -39,7 +39,7 @@
 	padding-right:5px;
 }
 .mbutil_hlist > li:last-of-type{padding-right:0;}
-.mbutil{display:inline-block;border:1px solid #fff; font-size:14px;line-height:1;padding:7px 14px 6px;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.11); white-space: nowrap;color:#fff;}
+.mbutil{display:inline-block;border:1px solid #fff; font-size:12px;line-height:1;padding:6px 12px 6px;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.11); white-space: nowrap;color:#fff;}
 .mblog_after_w{color:#fff;text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.11);font-size:17px;text-align: left;}
 .mblog_after_text{padding-left:20px;position:relative;min-height:16px;font-size:16px;letter-spacing:-0.5px; word-break: keep-all;}
 .mblog_after_text:before{display:block;content:'';width:14px;height:16px;background:url("../images/ico_mb_member_men.png") no-repeat 0 0/14px 16px;position:absolute;top:26px;left:0;}
