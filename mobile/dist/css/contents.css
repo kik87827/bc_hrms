@@ -186,8 +186,8 @@ input.field_form_input.type2::input-placeholder{font-size:9px;}
 .fphoto_z{position:relative;top:0;left:0;width:80px;height:80px;}
 .fphoto_w{width:100%;height:100%;box-sizing:border-box;background:#fff url("../images/ico_men.png") no-repeat 50% 50%/cover;}
 
-.btn_fakefile{background:#4b4b4b;color:#fff;border-radius:5px;padding:6px 10px 7px;white-space: nowrap;font-size:13px;display:inline-block;line-height:1;}
-.btn_smzf{background:#4b4b4b;color:#fff;margin-right:0;border-radius:5px;padding:6px 16px;white-space: nowrap;font-size:14px;display:inline-block;}
+.btn_fakefile{background:#4b4b4b;color:#fff;border-radius:5px;padding:6px 10px 7px;white-space: nowrap;font-size:12px;display:inline-block;line-height:1;}
+.btn_smzf{background:#4b4b4b;color:#fff;margin-right:0;border-radius:5px;padding:6px 16px;white-space: nowrap;font-size:12px;display:inline-block;}
 .btn_smzf:last-of-type{margin-right:5px;}
 .fkef_file{display:none;}
 .btn_like_w{text-align:right;margin-top:20px;}
@@ -468,7 +468,7 @@ select.dsel:disabled{background-color:#f7f7f7;color:#999999;}
 .ctb2_w03{width:22%;}
 .tbsk_tb td.tb_data{display:table-cell;text-align:left;padding-left:10px;padding-right:10px;}
 .tbsk_tb td.has_data{text-align:left;padding-left:10px;padding-right:10px;}
-.btn_ctblink{display:inline-block;background:#4b4b4b;color:#fff;border-radius:5px;padding:6px 10px;white-space: nowrap;line-height:1;}
+.btn_ctblink{display:inline-block;background:#4b4b4b;color:#fff;border-radius:5px;padding:6px 10px;white-space: nowrap;line-height:1;font-size:12px;}
 .tb_data{display:inline-block;line-height:1.3;font-size:12px;}
 
 .vertical_item_wrap{}
