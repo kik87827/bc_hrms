@@ -31,7 +31,7 @@ input[type="number"],
 input[type="password"]{-webkit-appearance:none;border-radius:0;font-family: 'NotoSans-Regular';color:#5d5d5d;outline: none;-webkit-appearance: none;-moz-appearance: none;}
 fieldset legend ,
 table caption {display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
-textarea{resize:none;font-family: 'NotoSans-Regular';-webkit-appearance: none;-moz-appearance: none;font-size:12px;-webkit-shadow:none;border:1px solid #bbb;-webkit-border-radius:0; color:#2b2b2b; width:100%; padding:5px 10px;font-family:'Noto Sans Korean';box-sizing:border-box;}
+textarea{resize:none;font-family: 'NotoSans-Regular';-webkit-appearance: none;-moz-appearance: none;font-size:12px;-webkit-shadow:none;border:1px solid #bbb;-webkit-border-radius:0; color:#2b2b2b; width:100%; padding:5px 10px;box-sizing:border-box;}
 
 @media print {
   .container {
@@ -84,11 +84,11 @@ select::-ms-expand {display: none;}
 .pbt20{padding-left:20px !important;padding-right:20px !important;}
 .vat{vertical-align:top !important;}
 
-.redimp{color:#ff0000;}
-.redimp *{color:#ff0000;}
-@media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0){
+.redimp{color:#ff0000 !important;}
+.redimp *{color:#ff0000 !important;}
+/* @media screen and (min-color-index:0) and (-webkit-min-device-pixel-ratio:0){
 	textarea{font-size:14px;}
-}
+} */
 
 ::-webkit-input-placeholder{color:#999;font-family: 'NotoSans-Regular';}
 ::-moz-input-placeholder{color:#999;font-family: 'NotoSans-Regular';}

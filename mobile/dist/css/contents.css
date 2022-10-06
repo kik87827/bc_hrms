@@ -522,6 +522,7 @@ select.dsel:disabled{background-color:#f7f7f7;color:#999999;;opacity:1;}
 .design_check_list{}
 .design_check_list > li{position:relative;padding-left:15px;margin-bottom:5px;}
 .design_check_list > li:before{display:block;content:'';width:10.5px;height:7px;background:url("../images/icon_check_active.png") no-repeat 0 0/100% auto;position:absolute;top:6px;left:0;}
+.redimp li:before{background-image:url("../images/icon_check_active2.png") !important;}
 .design_check_list > li:last-of-type{margin-bottom:0;}
 
 
