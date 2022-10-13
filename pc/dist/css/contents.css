@@ -260,3 +260,29 @@
 
 @media (max-width:1400px){
 }
+
+/* common */
+.props_form_item{display:flex;align-items: center;font-size:0;line-height:0;}
+.props_element{display:inline-block;cursor:pointer;-webkit-appearance: none;appearance: none;-moz-appearance: none;background:#fff url("../images/ico_circhk.png") no-repeat 0 0/100% auto;border:1px solid #a6a6a6;width:21px;height:21px;}
+.props_element:checked{background-position:0 100%;border-color:#3070b7;background-color:#3070b7;}
+.props_element:checked + .props_label{}
+.props_label{cursor:pointer;color:#ffffff;line-height:1;font-size:15px;margin-left:5px;}
+
+/* login */
+.fieldset_formbox{position:relative;z-index:2;background:rgba(0,0,0,.3);width:430px;padding:55px 84px;border-radius:5px;}
+.fs_fbox_title{font-size:42px;letter-spacing:-1px;color:#fff;line-height:1;text-align: center;font-family: 'NotoSans-Light';}
+.fs_form_wrap{margin-top:40px;}
+.fs_form_item{background:#fff;margin-top:5px;display:flex;align-items: center;;border:1px solid #bbb;}
+.fs_form_label{font-size:15px;color:#333;line-height:1;padding:0 15px;white-space: nowrap;flex:0;}
+.fs_form_item:first-of-type{margin-top:0;}
+.fs_form_item.type2{margin-top:13px;}
+.fs_form_item:last-of-type{}
+input.fs_form_input{flex:1;min-width:0;height:43px;background:transparent;line-height:1;border:0;width:100%;font-size:15px;box-sizing: border-box;}
+input.fs_form_input:disabled{color:#f3f3f3}
+input.fs_form_input:disabled::-webkit-input-placeholder{color:#999 !important;}
+.fs_form_item.disabled{color:#f3f3f3}
+.fs_form_item.disabled .fs_form_label{color:#999}
+
+.btn_formsubmit_wrap{margin-top:15px;}
+.btn_formsubmit{display:block;width:100%;box-sizing: border-box;padding:20px;color:#fff;font-size:19px;text-align:center;font-family: 'NotoSans-Medium';line-height:1;background-color:#3070b7;border-radius:100px;}
+
