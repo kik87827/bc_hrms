@@ -18,6 +18,7 @@ BCHR = {
 		});
 		$(window).on("load",function(){
 			funcThis.oldBrowerPop();
+			funcThis.mainFunc();
 		});
 	},
 	bothMinHeight : function(target,csstarget,adddom){
@@ -176,16 +177,28 @@ BCHR = {
 			});
 		});
 	},
-	setVh(){
+	setVh : function(){
 		const header_zone = document.querySelector(".header_zone");
 		let header_zone_height = header_zone !== null ? header_zone.getBoundingClientRect().height : 0;
 		const full_field_type = document.querySelector(".full_field_type");
 		function action(){
-			full_field_type.style.minHeight = `${window.innerHeight - header_zone_height}px`;
+			full_field_type.style.height = window.innerHeight - header_zone_height + "px";
 			console.log(full_field_type);
 		}
 		action();
 		window.addEventListener('resize', action);
+	},
+	mainFunc : function(){
+		if(document.querySelector("html").classList.contains("gecko")){
+			$(".mc_box").each(function(){
+				var thisBox = $(this).find(".mc_box");
+				var maxHeightArray = [];
+				thisBox.each(function(){
+					maxHeightArray.push(thisBox.children().height());
+				})
+				console.log(maxHeightArray);
+			});
+		}
 	}
 };
 BCHR.init();

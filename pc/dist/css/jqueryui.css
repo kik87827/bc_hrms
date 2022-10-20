@@ -143,13 +143,13 @@
 .ui-datepicker .ui-datepicker-title:after{display:block;content:'';clear:both;}
 .ui-datepicker .ui-datepicker-title select {
 	font-size: 12px;
-	margin: 1px 0;
+	margin: 1px 0; 
 }
 .ui-datepicker select.ui-datepicker-month,
 .ui-datepicker select.ui-datepicker-year {
 	width: 80px;
 	margin:0 3px;
-	float:right;
+	float:right; 
 }
 .ui-datepicker table {
 	width: 100%;
