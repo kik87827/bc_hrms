@@ -18,7 +18,6 @@ BCHR = {
 		});
 		$(window).on("load",function(){
 			funcThis.oldBrowerPop();
-			funcThis.mainFunc();
 		});
 	},
 	bothMinHeight : function(target,csstarget,adddom){
@@ -187,18 +186,6 @@ BCHR = {
 		}
 		action();
 		window.addEventListener('resize', action);
-	},
-	mainFunc : function(){
-		if(document.querySelector("html").classList.contains("gecko")){
-			$(".mc_box").each(function(){
-				var thisBox = $(this).find(".mc_box");
-				var maxHeightArray = [];
-				thisBox.each(function(){
-					maxHeightArray.push(thisBox.children().height());
-				})
-				console.log(maxHeightArray);
-			});
-		}
 	}
 };
 BCHR.init();
