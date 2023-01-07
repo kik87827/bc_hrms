@@ -347,6 +347,7 @@ _:-ms-fullscreen, :root .profile_swiper_wrap{margin:0 -24px 0 0;}
     _:-ms-fullscreen, :root .mc_boxitem_row.row_02 .mc_boxitem{
         flex-basis: 439px;
     }
+    .profile_spec_emp_box{padding:3px 10px;}
 }
 
 @media (max-width:1400px){
