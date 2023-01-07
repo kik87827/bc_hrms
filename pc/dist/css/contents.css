@@ -213,7 +213,7 @@ _:-ms-fullscreen, :root .text_getdata:after{
 .profile_multi_list .profile_thum{}
 .profile_multi_list .profile_spec_main_text{}
 .profile_multi_list .profile_spec_main_text:after{}
-.profile_spec_emp_box{margin-top:9px;display:inline-block;background:#f9fcff;border:1px solid #a6cae5;border-radius:100px;padding:2px 15px;font-size:15px;color:#333333;}
+.profile_spec_emp_box{margin-top:9px;display:inline-block;word-break:keep-all;background:#f9fcff;border:1px solid #a6cae5;border-radius:100px;padding:2px 15px;font-size:15px;color:#333333;}
 
 .mc_calendar_wrap{width:100%;box-sizing: border-box;padding:0 15px;}
 .mc_calendar_wrap .ui-datepicker{width:100%;}
@@ -288,6 +288,7 @@ _:-ms-fullscreen, :root .mc_calendar_wrap .ui-widget-header .ui-state-highlight{
 .current_hor_value{width:68px;height:68px;display:flex;justify-content: center;align-items: center;border:1px solid #c9e7ff;border-radius:100%;font-size:26px;color:#3070b7;font-family: 'NotoSans-Bold';line-height:1;}
 
 .profile_swiper_wrap{position:relative;max-width:100%;padding:18px 0;margin:0 -24px;}
+_:-ms-fullscreen, :root .profile_swiper_wrap{margin:0 -24px 0 0;}
 .btn_swiper_control{display:inline-block;width:18px;height:30px;position:absolute;top:50%;transform: translateY(-50%);z-index:5;}
 .btn_swiper_control:after{display:block;content:'';width:11px;height:11px;border-left:1px solid #727272;border-bottom:1px solid #727272;position:absolute;top:9px;left:6px;}
 .btn_swiper_control.prev_go{left:-10px;}
@@ -328,6 +329,11 @@ _:-ms-fullscreen, :root .mc_calendar_wrap .ui-widget-header .ui-state-highlight{
     .chart_quad_list{display:inline-block;}
     .mc_direct_menu_list{flex-wrap:wrap;margin:-10px 0;justify-content: center;}
     .mc_direct_menu_list > li{flex:0 0 50%;padding: 10px;box-sizing: border-box;}
+    
+    _:-ms-fullscreen, :root .mc_direct_menu_list{display:block;}
+    _:-ms-fullscreen, :root .mc_direct_menu_list:after{display:block;content:'';clear:both;}
+    _:-ms-fullscreen, :root .mc_direct_menu_list > li{float:left;width:50%;}
+    
     .mc_direct_menu_list.type2 > li{flex:0 0 33.3333333333333333333%;padding:10px;}
     .profile_multi_list{flex-wrap:wrap;margin:-10px 0;}
     .profile_multi_list > li{flex:0 0 50%;padding: 10px 0;}
@@ -337,6 +343,10 @@ _:-ms-fullscreen, :root .mc_calendar_wrap .ui-widget-header .ui-state-highlight{
     .mc_title_text{font-size:16px;}
 
     .mc_content_row.has_design{background-size:60px auto;}
+
+    _:-ms-fullscreen, :root .mc_boxitem_row.row_02 .mc_boxitem{
+        flex-basis: 439px;
+    }
 }
 
 @media (max-width:1400px){
