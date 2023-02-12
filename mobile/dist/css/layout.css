@@ -21,6 +21,17 @@
 .header_zone.type2 .btn_mobile_menu_obj,
 .header_zone.type2 .btn_mobile_menu_obj:before,
 .header_zone.type2 .btn_mobile_menu_obj:after{background:#fff;}
+
+.header_zone.type3{padding:0 }
+.header_logo_g{display:flex;align-items: center;position:absolute;top:0;left:15px;height:100%;font-size:0;line-height:0;}
+.header_plogo{display:inline-block;margin-right:9px;}
+.header_plogo:last-of-type{margin-right:0;}
+.header_plogo.logo_kt{}
+.header_plogo.logo_kt img{width:22px;}
+.header_plogo.logo_bc{}
+.header_plogo.logo_bc img{width:23px;}
+.header_main_title{display:flex;height:100%;align-items: center;color:#333333;justify-content: center;font-weight:700;font-size:18px;}
+
 .header_logo{height:49px;display:flex;align-items:center;}
 .header_logoitem{display:inline-block;font-size:0;line-height:0;}
 .header_logoitem img{max-width:inherit;height:13px;vertical-align: middle;}
