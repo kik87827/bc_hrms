@@ -175,6 +175,13 @@ input.field_form_input.type2::input-placeholder{font-size:9px;}
 .btn_dlayerclose:after{transform:rotate(-45deg);-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
 
 
+
+.dlayer_tb_wrap{position:absolute;top:0;left:0;width:100%;height:100%;box-sizing: border-box;}
+.dlayer_tb{display:table;width:100%;height:100%;table-layout: fixed;}
+.dlayer_td{display:table-cell;vertical-align: middle;}
+.dlayer_modal_box{}
+.dlayer_modal_message_g{}
+
 /* component */
 
 .fvtb_w{position:relative;overflow:hidden;}
