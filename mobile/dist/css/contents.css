@@ -34,6 +34,19 @@
 
 .mc_lkbox{border:1px solid #accbe2;border-radius:8px;background:#fff;padding:13px;position:relative;}
 
+.data_notice_list{border-bottom:1px solid #d9d9d9;}
+.data_notice_list > li{border-top:1px solid #d9d9d9;}
+.data_notice_item{display:flex;font-size:12px;padding:12px 0;}
+.data_notice_maintext{flex:1;min-width:0;color:#4e4e4e;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;line-height:1.3;}
+.data_notice_elsetext{flex:0;white-space: nowrap;line-height:1.3;color:#4e4e4e;margin-left:10px;}
+.get_tail_low{color:#4e4e4e;font-size:12px;line-height:1.5;padding:20px;}
+.get_tail_low *{word-break: break-all;color:#4e4e4e;font-size:12px;line-height:1.5;}
+.get_tail_low img{width:auto !important; height: auto !important;}
+
+.dlayer_message_row{text-align: center;font-size:13px;color:#4e4e4e;padding:30px 20px;}
+.dlayer_message_emp{color:#000;font-weight:500;}
+.dlayer_message_small{font-size:11px;}
+
 .btn_mcbox_group{display:flex;flex-wrap:wrap;margin:-5px;}
 .btn_mcbox_item{padding:5px;box-sizing: border-box;}
 .btn_mcbox_item.long_type{flex:0 0 100%;}
@@ -178,8 +191,11 @@ input.field_form_input.type2::input-placeholder{font-size:9px;}
 
 .dlayer_tb_wrap{position:absolute;top:0;left:0;width:100%;height:100%;box-sizing: border-box;}
 .dlayer_tb{display:table;width:100%;height:100%;table-layout: fixed;}
-.dlayer_td{display:table-cell;vertical-align: middle;}
-.dlayer_modal_box{}
+.dlayer_td{display:table-cell;vertical-align: middle;padding:15px;}
+.dlayer_modal_box{position:relative;z-index:5;background:#fff;border-radius:10px;}
+.dlayer_modal_box .btn_dlayerclose{position:absolute;top:-9px;right:-9px;}
+.dlayer_modaltop_low{box-sizing:border-box;background: #f5faff;border-radius:10px 10px 0 0;background: #f5faff;border-bottom:1px solid #cbd5dd;}
+.dlayer_modalcont_low{box-sizing:border-box;background:#fff;border-radius:0 0 10px 10px;padding:20px;}
 .dlayer_modal_message_g{}
 
 /* component */
